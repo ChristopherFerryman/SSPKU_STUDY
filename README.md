@@ -26,6 +26,6 @@
 
 * [MIT 6.S081](https://pdos.csail.mit.edu/6.828/2020/xv6.html)
 
-  * [Notborndie](https://github.com/Notborntodie/MIT6.S081_Czy)
+  * [Notborntodie](https://github.com/Notborntodie/MIT6.S081_Czy)
 
   
