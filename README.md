@@ -11,13 +11,13 @@
 
 * **数据结构**
 
-  * [Qi1e-Wu](https://github.com/Notborntodie/PKUSE22/blob/DataStructure-Homework01/Datastructure-Homework-SingleLinkList.cpp)
+  * [第1次作业 by Qi1e-Wu](https://github.com/Notborntodie/PKUSE22/blob/DataStructure-Homework01/Datastructure-Homework-SingleLinkList.cpp)
 
-  * [Notborntodie](https://github.com/Notborntodie/myStl/tree/main/List)
+  * [线性表 by Notborntodie](https://github.com/Notborntodie/myStl/tree/main/List)
 
 * **Java**
 
-  * [Ferryman](https://github.com/ChristopherFerryman/SSPKU_STUDY/tree/main/Java/exampleLearning)
+  * [教材示例学习 by Ferryman](https://github.com/ChristopherFerryman/SSPKU_STUDY/tree/main/Java/exampleLearning)
 
 * **计算机系统导论**
 
