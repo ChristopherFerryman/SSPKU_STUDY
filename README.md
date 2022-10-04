@@ -29,6 +29,7 @@
   * [SQLite的安装](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
   * [Appropriate Uses For SQLite](https://www.sqlite.org/whentouse.html)
   * [完整的imdb-sqlite数据库](https://pypi.org/project/imdb-sqlite/)
+  * [数据库第1次习题课](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/数据库第1次习题课)
   
 ---
 
