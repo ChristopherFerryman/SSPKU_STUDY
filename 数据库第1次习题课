@@ -1,0 +1,15 @@
+1. 关系代数，运算对象是关系，运算结果亦为关系。
+   参照“关系代数取最值”的问题，为什么是“满足一次条件”即算满足条件？（联系可能的实现）
+   
+2. Procedural and Declarative(Non-Procedural) Languages
+   Observation Relational algebra is a procedural language because it defines the high level-steps of how to compute a query. 
+   For example, σb id=102(R ▷◁ S) is saying to first do the join of R and S and then do the select, whereas (R ▷◁ (σb id=102(S))) will do the select on S first, and then do the join. 
+   These two statements will actually produce the same answer, but if there is only 1 tuple in S with b id=102 out of a billion tuples, then (R ▷◁ (σb id=102(S))) will be significantly faster than σb id=102(R ▷◁ S). 
+   A better approach is to say the result you want (retrieve the joined tuples from R and S where bid equals 102), and let the DBMS decide the steps it wants to take to compute the query. 
+   SQL will do exactly this, and it is the de facto standard for writing queries on relational model databases.
+   
+3. 关系代数的除法理解
+   [How to understand `u=r÷s`, the division operator, in relational algebra?](https://stackoverflow.com/questions/34978533/how-to-understand-u-r÷s-the-division-operator-in-relational-algebra)
+   [Formal Ralational Languages by UCB](https://www.cs.ubc.ca/~laks/cpsc304/Unit05-FormalLanguages.pdf)
+   [推荐的SQL练习](https://15445.courses.cs.cmu.edu/fall2022/homework1/)
+   [where,group by,having,order by执行顺序和编写顺序](https://blog.csdn.net/The_Best_Hacker/article/details/92784204)
