@@ -11,7 +11,7 @@
 
 * **数据结构**
 
-  * [第1次作业 by Qi1e-Wu](https://github.com/Notborntodie/PKUSE22/blob/DataStructure-Homework01/Datastructure-Homework-SingleLinkList.cpp)
+  * [数据结构两次作业（自己造轮子） by Nickel](https://github.com/Notborntodie/PKUSE22/blob/DataStructure-Homework)
 
   * [线性表 by Notborntodie](https://github.com/Notborntodie/myStl/tree/main/List)
 
