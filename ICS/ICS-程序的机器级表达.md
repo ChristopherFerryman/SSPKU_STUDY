@@ -119,16 +119,6 @@ val=x>0 ? x*=7 : x+=3;
 
 还是这张图，局部变量和寄存器的数值可以放在栈上，下一节哪些寄存器放在caller或者callee上。
 
-* 
-
-
-
-
-
-
-
-
-
 ### Caller saved and Callee saved
 
 <img src="http://cdn.zhengyanchen.cn/img202210071602093.png" alt="截屏2022-10-07 16.02.43" style="zoom:23%;" />
