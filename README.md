@@ -22,7 +22,7 @@
 * **计算机系统导论**
 
   * 
- 
+
 * **数据库**
   * [CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/)
   * [MySQL安装教程 for Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
@@ -35,9 +35,13 @@
 
 ## 进阶课程
 
-* [MIT 6.S081](https://pdos.csail.mit.edu/6.828/2020/xv6.html)
-
+* [MIT 6.S081(操作系统)](https://pdos.csail.mit.edu/6.828/2020/xv6.html)
   * [Notborntodie](https://github.com/Notborntodie/MIT6.S081_Czy)
   * 
+  
+
+* [CMU 15-445(数据库)](https://15445.courses.cs.cmu.edu/fall2022/)
+
+* [MIT 6.824(分布式系统)](https://pdos.csail.mit.edu/6.824/index.html)
 
   
