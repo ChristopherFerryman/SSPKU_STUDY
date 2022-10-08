@@ -25,6 +25,7 @@
 
 * **数据库**
   * [CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/)
+  * [(推荐)MySQL安装简易指南](https://qyfjqdbwpl.feishu.cn/docx/JDgGd3YKJoMB2yxgV3gcXcy0niv)
   * [MySQL安装教程 for Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
   * [SQLite的安装](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
   * [Appropriate Uses For SQLite](https://www.sqlite.org/whentouse.html)
