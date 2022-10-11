@@ -17,7 +17,7 @@
 
 * **Java**
 
-  * [教材示例学习(请在目录中按ExampleLearning_chap_example前缀自寻) by Ferryman](https://github.com/ChristopherFerryman/SSPKU_STUDY/tree/main/Java)
+  * [教材示例学习（请在目录中按ExampleLearning_chap_example前缀自寻） by Ferryman](https://github.com/ChristopherFerryman/SSPKU_STUDY/tree/main/Java)
   * [Java第四次作业7-3 by 小于鱼](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/Practice_7_3.java)
   * [Java第四次作业7-4 by 小于鱼](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/Practice_7_4.java)
 
