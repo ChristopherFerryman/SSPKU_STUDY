@@ -12,8 +12,9 @@
 * **数据结构**
 
   * [数据结构两次作业（自己造轮子） by Nickel](https://github.com/Notborntodie/PKUSE22/tree/DataStructure-Homework)
-
   * [线性表 by Notborntodie](https://github.com/Notborntodie/myStl/tree/main/List)
+  * 数据结构第3次作业
+    * [Pi的前1000万位（txt文档）](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/pi_10million.txt)
 
 * **Java**
 
