@@ -13,6 +13,15 @@
 
   * [数据结构两次作业（自己造轮子） by Nickel](https://github.com/Notborntodie/PKUSE22/tree/DataStructure-Homework)
   * [线性表 by Notborntodie](https://github.com/Notborntodie/myStl/tree/main/List)
+  * 数据结构第2次作业
+    * [作业要求](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/20221004_HomeworkRequirements.png)
+    * Java实现（以下6个.java文件需要打包到一个package内运行） by Ferryman
+      * [package-info](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/package-info.java)
+      * [Homework_2(含main方法)](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/Homework_2.java)
+      * [Stack(栈接口类)](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/Stack.java)
+      * [SeqQueue(顺序栈类)](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/SeqQueue.java)
+      * [Queue(队列接口类)](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/Queue.java)
+      * [SeqQueue(顺序循环队列类)](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/SeqStack.java)
   * 数据结构第3次作业
     * [Pi的前1000万位（txt文档）](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/pi_10million.txt)
 
