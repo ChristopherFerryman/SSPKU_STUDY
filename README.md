@@ -37,18 +37,18 @@
 
 * **数据库**
   * [CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2022/)
-  * [(推荐)MySQL安装简易指南](https://qyfjqdbwpl.feishu.cn/docx/JDgGd3YKJoMB2yxgV3gcXcy0niv)
-    * [MySQL官方下载链接](https://dev.mysql.com/downloads/mysql/)
-    * [Win10安装MySQL教程(同样适用于Win11)](https://zhuanlan.zhihu.com/p/265148449)
-    * [MySQL修改、忘记root密码(适用于Windows)](https://zhuanlan.zhihu.com/p/442759047)
-    * 推荐可视化工具：Navicat, vscode ppz(免费，简单).
-    * [MySQL的常见操作](https://blog.csdn.net/yahid/article/details/123501354)
-    
-  * [MySQL安装教程 for Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
-  * [SQLite的安装](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
-  * [Appropriate Uses For SQLite](https://www.sqlite.org/whentouse.html)
-  * [完整的imdb-sqlite数据库](https://pypi.org/project/imdb-sqlite/)
-  * [数据库第1次习题课](https://github.com/ChristopherFerryman/SSPKU_STUDY/blob/main/数据库第1次习题课)
+  * [MySQL数据库]
+    * [(推荐)MySQL安装简易指南](https://qyfjqdbwpl.feishu.cn/docx/JDgGd3YKJoMB2yxgV3gcXcy0niv)
+      * [MySQL官方下载链接](https://dev.mysql.com/downloads/mysql/)
+      * [Win10安装MySQL教程(同样适用于Win11)](https://zhuanlan.zhihu.com/p/265148449)
+      * [MySQL修改、忘记root密码(适用于Windows)](https://zhuanlan.zhihu.com/p/442759047)
+      * 推荐可视化工具：Navicat, vscode ppz(免费，简单).
+      * [MySQL的常见操作](https://blog.csdn.net/yahid/article/details/123501354)
+    * [MySQL安装教程 for Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+    * [SQLite的安装](https://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
+    * [Appropriate Uses For SQLite](https://www.sqlite.org/whentouse.html)
+    * [完整的imdb-sqlite数据库](https://pypi.org/project/imdb-sqlite/)
+  * [数据库习题课资料(飞书云文档)](https://qyfjqdbwpl.feishu.cn/docx/QttDdwA1ao8CQ8xpInXcsNicnWe)
   
 ---
 
