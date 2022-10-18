@@ -24,6 +24,23 @@ int isTmax(int x) {
 
 
 
+
+
+## 算数和移动的操作符
+
+<img src="http://cdn.zhengyanchen.cn/img202210141325927.png" alt="截屏2022-10-14 13.25.03" style="zoom:50%;" />
+
+* 这都是双操作数的
+* 
+
+
+
+
+
+
+
+
+
 ## Condition moves(`cmov`)及其坏结果
 
  为了便于流水线作业，编译器可能会让两分支都会运算，最后使用`cmov`(condition moves)指令来优化`if else`。
@@ -56,6 +73,18 @@ val=x>0 ? x*=7 : x+=3;
 <img src="http://cdn.zhengyanchen.cn/img202209301655110.png" alt="截屏2022-09-30 16.55.06" style="zoom:40%;" />
 
 向陈老师确定后，此处的`goto *JTab[x]`的注释是不严谨的。`Jab[x]`和`*(Jab+x)`等效，都可以表示取跳转表第x个地址，使用这两个取代注释都是可以。
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,7 +138,7 @@ val=x>0 ? x*=7 : x+=3;
 `retq`做镜像操作
 
 * 弹出被调用函数(callee)的所有数据，`%rsp`减回`return address`的位置。
-* 跳转到return address的位置，即原函数的下一条指令。
+* 跳转到return address的位置，即caller的下一条指令。
 
 ###  通过栈存放寄存器数据和局部变量
 
@@ -133,10 +162,94 @@ val=x>0 ? x*=7 : x+=3;
 
   
 
-* 
+### 通过栈实现递归
+
+*插播复习一下，testq reg reg做的让reg和自己做`^`运算，并把结果放在ZF寄存器*
+
+最后通过递归的例子来对这里进行总结
+
+<img src="http://cdn.zhengyanchen.cn/img202210141306145.png" alt="截屏2022-10-14 13.06.49" style="zoom:43%;" />
+
+本质来说，递归和前面所说的函数调用函数做的事没有任何区别，只是调用的次数我们事先没有预设好。观察三个寄存器
+
+* `%rdi`,这是一个用于传递参数的寄存器，因为递归调用函数还需要它，所以需要它需要把参数交给`%rbx`保存。
+
+  ```assembly
+  movq %rdi %rbx
+  ```
+
+* `%rbx`这是一个callee saved  register,因为它需要保存这一层`%rdi`的数值，所以需要把它推到栈上。
+
+* `%rax`这是一个保存函数返回值的寄存器，因为递归每次是自底而上地返回，每次都是caller覆盖callee,所以无需担心保存问题。
+
+最后补充一个问题，**栈区的大小都是有限的（事实上，是被设定好了大小的）。所以如果出现无限递归的情况，那么很快就会出现栈溢出(stackflow)的错误，某种程度上来说，这是操作系统保护计算机的一种方式。**
+
+这是一个例子：
+
+<img src="http://cdn.zhengyanchen.cn/img202210141631408.png" alt="截屏2022-10-14 16.30.42" style="zoom:25%;" />
+
+
+
+## Array
+
+### Machine word
+
+* 对于不同的计算机，word的大小不同(word大小和寄存器大小相同)
+
+<img src="http://cdn.zhengyanchen.cn/img202210141411755.png" alt="截屏2022-10-14 14.11.43" style="zoom:33%;" />
+
+* 字节内部排序不变，字节间排序分大小端[网络使用大端]，下图表示0x01234567
+
+<img src="http://cdn.zhengyanchen.cn/img202210141415752.png" alt="截屏2022-10-14 14.15.13" style="zoom:24%;" />
+
+### 不同的数组表示
+
+<img src="http://cdn.zhengyanchen.cn/img202210141453719.png" alt="截屏2022-10-14 14.53.54" style="zoom:33%;" />
+
+* nested array
+* multi-level array
+
+
+
+
+
+## Struct
+
+* 结构体的内存结构
+
+  <img src="http://cdn.zhengyanchen.cn/img202210141512443.png" alt="截屏2022-10-14 15.12.21" style="zoom:30%;" />
 
   
 
-  
+### Align(对齐)
 
-  
+<img src="http://cdn.zhengyanchen.cn/img202210141531098.png" alt="截屏2022-10-14 15.31.11" style="zoom:25%;" />
+
+* 结构内部的对齐：如图是从unaligned data到aligned data,**对齐保证数据和它的地址是可以整除的**。比如int为4字节，则地址就需要为4的整数倍。不同的数据规则如下：
+
+  <img src="http://cdn.zhengyanchen.cn/img202210141535521.png" alt="截屏2022-10-14 15.35.46" style="zoom: 20%;" />
+
+* 结构本身在内存的对齐：
+
+  <img src="http://cdn.zhengyanchen.cn/img202210141537540.png" alt="截屏2022-10-14 15.37.13" style="zoom:25%;" />
+
+  规则和结构体内的规则类似，只不过现在要保证结构体的地址和**结构体内最大基本数据的长度**为整数倍
+
+### 存在对齐，如何节省空间
+
+<img src="http://cdn.zhengyanchen.cn/img202210141544689.png" alt="截屏2022-10-14 15.44.37" style="zoom:20%;" />
+
+
+
+## Memory
+
+<img src="http://cdn.zhengyanchen.cn/img202210141609682.png" alt="截屏2022-10-14 16.08.52" style="zoom:30%;" />
+
+进程的内存布局 
+
+* stack和heap的大小不确定，所以一个向下增长，一个向上增长。
+
+### buffer overflow
+
+
+
